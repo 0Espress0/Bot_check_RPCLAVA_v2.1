@@ -7,3 +7,23 @@
 4. check_rpc_status(web3):ตรวจสอบสถานะการซิงค์ของ Ethereum node RPC ที่เชื่อมต่อ โดยใช้ตัวแปร web3 เพื่อเรียกใช้ Web3 API
 5. check_wallet_balance(web3):ตรวจสอบยอดคงเหลือใน Wallet ที่เชื่อมต่อ โดยใช้ตัวแปร web3 เพื่อเรียกใช้ Web3 API
 6. Main loop:ทำซ้ำโดยตรวจสอบ RPC endpoint และ private key จากไฟล์ที่ระบุ เชื่อมต่อหรือตัดการเชื่อมต่อกับ Wallet ตรวจสอบสถานะ RPC node และยอดคงเหลือใน Wallet และพักเฉยๆ 10 วินาที
+----------------------------------------------
+เตรียมความพร้อม
+
+ติดตั้ง Python version 3 ขึ้นไป
+
+sudo apt update
+sudo apt install python3 -y
+ติดตั้ง Module Web3
+
+sudo apt update
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+pip3 install numpy
+pip3 install web3
+ขั้นตอนการใช้งาน
+
+ทำการเพิ่ม RPC LAVA ของตัวเองในไฟล์ rpc_endpoint.txt
+ทำการเพิ่ม Private kry wallet (EVM Chain) ไปที่ไฟล์ private_key.txt
+หลักจากติดตั้งเรียบร้อยให้ทำการรัน command >>python3 Bot_LAVA_PKWv2.py *** ไฟล์ Bot_LAVA_PKWv2.py , private_key.txt & rpc_endpoint.txt จะต้องอยู่ใน folder เดียวกัน ***
+⚠️⚠️⚠️ Code นี้มีการใช้งาน Private key wallet โปรดใช้ด้วยความระมันระวัง ⚠️⚠️⚠️
