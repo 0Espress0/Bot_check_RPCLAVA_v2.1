@@ -11,19 +11,20 @@
 เตรียมความพร้อม
 
 ติดตั้ง Python version 3 ขึ้นไป
-
-sudo apt update
-sudo apt install python3 -y
+1. sudo apt update
+2. sudo apt install python3 -y
+   
 ติดตั้ง Module Web3
+1. sudo apt update
+2. sudo apt install python3 -y
+3. sudo apt install python3-pip -y
+4. pip3 install numpy
+5. pip3 install web3
 
-sudo apt update
-sudo apt install python3 -y
-sudo apt install python3-pip -y
-pip3 install numpy
-pip3 install web3
 ขั้นตอนการใช้งาน
+1. ทำการเพิ่ม RPC LAVA ของตัวเองในไฟล์ rpc_endpoint.txt
+2. ทำการเพิ่ม Private kry wallet (EVM Chain) ไปที่ไฟล์ private_key.txt
+3. หลักจากติดตั้งเรียบร้อยให้ทำการรัน command >>python3 Bot_LAVA_PKWv2.py
+*** ไฟล์ Bot_LAVA_PKWv2.py , private_key.txt & rpc_endpoint.txt จะต้องอยู่ใน folder เดียวกัน ***
 
-ทำการเพิ่ม RPC LAVA ของตัวเองในไฟล์ rpc_endpoint.txt
-ทำการเพิ่ม Private kry wallet (EVM Chain) ไปที่ไฟล์ private_key.txt
-หลักจากติดตั้งเรียบร้อยให้ทำการรัน command >>python3 Bot_LAVA_PKWv2.py *** ไฟล์ Bot_LAVA_PKWv2.py , private_key.txt & rpc_endpoint.txt จะต้องอยู่ใน folder เดียวกัน ***
 ⚠️⚠️⚠️ Code นี้มีการใช้งาน Private key wallet โปรดใช้ด้วยความระมันระวัง ⚠️⚠️⚠️
